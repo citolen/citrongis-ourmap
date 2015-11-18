@@ -1,0 +1,13 @@
+{
+    "default_port": 5000,
+    "default_map": "test",
+    "default_map_credentials": "",
+    "enabled_routes": [
+        "welcome",
+        "disconnect",
+        "viewport",
+        "featureadded",
+        "featureupdated",
+        "featuredeleted"
+    ]
+}

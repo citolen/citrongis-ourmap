@@ -1,0 +1,31 @@
+{
+  "name": "citrongis-ourmap",
+  "version": "1.0.0",
+  "description": "OurMap server for CitronGIS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/citolen/citrongis-ourmap.git"
+  },
+  "keywords": [
+    "OurMap",
+    "CitronGIS",
+    "GIS",
+    "SIG"
+  ],
+  "author": "citole_n",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/citolen/citrongis-ourmap/issues"
+  },
+  "homepage": "https://github.com/citolen/citrongis-ourmap",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "shortid": "^2.2.4",
+    "socket.io": "^1.3.7",
+    "tingodb": "^0.4.2"
+  }
+}
