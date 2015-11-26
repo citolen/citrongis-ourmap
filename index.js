@@ -7,7 +7,7 @@ var router =    require('./router.js');
 var Client =    require('./models/Client.js');
 var Db =        require('tingodb')().Db;
 
-global.db =         new Db('./db/', {});
+global.db =         new Db(global._root + 'db/', {});
 global.mapsCollection = db.collection('maps');
 global.featuresCollection = db.collection('features');
 
@@ -15,7 +15,7 @@ global.manager =    require('./manager.js')();
 
 
 var server = http.createServer();
-var port = argv.port || config.default_port;
+var port = process.env.PORT || config.default_port;
 var io = require('socket.io')(server);
 
 io.on('connection', function(socket) {
