@@ -7,7 +7,7 @@ var router =    require('./router.js');
 var Client =    require('./models/Client.js');
 var Db =        require('tingodb')().Db;
 
-global.db =         new Db(global._root + 'db/', {});
+global.db =         new Db(global.__root + 'db/', {});
 global.mapsCollection = db.collection('maps');
 global.featuresCollection = db.collection('features');
 
